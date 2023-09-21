@@ -37,7 +37,7 @@ const Navbar = () => {
             key={id}
             className="px-4  text-gray-500 cursor-pointer capitalize hover:scale-105 duration-200"
           >
-            <Link to={link} smooth duratio={500}>
+            <Link to={link} smooth={true} offset={-80} duration={500}>
               {link}
             </Link>
           </li>
@@ -56,7 +56,15 @@ const Navbar = () => {
               key={id}
               className="px-4 py-6 capitalize cursor-pointer text-4xl"
             >
-              {link}
+              <Link
+                to={link}
+                smooth={true}
+                offset={-80}
+                duration={500}
+                onClick={() => setNav(!nav)}
+              >
+                {link}
+              </Link>
             </li>
           ))}
         </ul>

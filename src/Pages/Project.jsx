@@ -60,7 +60,7 @@ const Project = () => {
           {list.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
-                className=" mx-auto w-[200px] h-[200px] 
+                className="mx-auto w-[200px] h-[200px] 
             rounded-lg duration-300 hover:scale-105"
                 src={src}
                 alt=""

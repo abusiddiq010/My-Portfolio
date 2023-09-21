@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { GoArrowRight } from "react-icons/go";
+import { Link } from "react-scroll";
 // import LinkedIn from "../Assets/LinkedIn.svg";
 // import instagram from "../Assets/instagram.svg";
 import hero from "../Assets/boy.png";
@@ -16,7 +17,7 @@ const Home = () => {
     });
   }, []);
   return (
-    <div>
+    <div name="home">
       <div className="h-screen w-full bg-gradient-to-b from-black via-black to-gray-800">
         <div
           className="flex flex-col items-center  justify-center h-screen w-full px-4  md:flex-row"
@@ -30,13 +31,15 @@ const Home = () => {
               I have 1 year of experience as web developer. <br />I love to work
               on technologies like React, Tailwind, Node.js, AWS Cloud.
             </p>
-            <div className="">
-              <button className="group  text-white flex w-fit items-center gap-2 px-3 py-3 rounded-md bg-gradient-to-r from-orange-200 to-yellow-800">
-                Portfolio
-                <span className="group-hover:rotate-90 duration-300">
-                  <GoArrowRight />
-                </span>
-              </button>
+            <div>
+              <Link to={"portfolio"} smooth={true} offset={-80}>
+                <button className="group  text-white flex w-fit items-center gap-2 px-3 py-3 rounded-md bg-gradient-to-r from-orange-200 to-yellow-800">
+                  Portfolio
+                  <span className="group-hover:rotate-90 duration-300">
+                    <GoArrowRight />
+                  </span>
+                </button>
+              </Link>
             </div>
           </div>
           <div className="my-3">

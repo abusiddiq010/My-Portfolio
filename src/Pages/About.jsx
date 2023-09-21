@@ -12,7 +12,7 @@ const About = () => {
   return (
     <div
       name="about"
-      className="w-full h-screen bg-gradient-to-b from-gray-800 to-black text-white"
+      className="bg-gradient-to-b from-gray-800 to-black text-white"
     >
       <div
         className="max-w-screen-lg p-4 mx-auto flex flex-col w-full h-full"
@@ -23,8 +23,8 @@ const About = () => {
             About
           </p>
         </div>
-        <div className="flex flex-col justify-center">
-          <div>
+        <div>
+          <div className="flex flex-col justify-center">
             <p className="text-xl">
               As a skilled front-end developer with expertise in AWS, React.js,
               HTML, CSS, and JavaScript, I bring a strong foundation in web
