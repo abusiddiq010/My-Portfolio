@@ -1,9 +1,10 @@
 import React, { useRef, useEffect } from "react";
-import weatherApp from "../Assets/Weather_app.png";
+import weatherApp from "../Assets/Weather_app.jpg";
 import TwitterClone from "../Assets/titter_clone.jpg";
-import Todo from "../Assets/todo_list.png";
+import Todo from "../Assets/todo.jpg";
+import Ecommerce from "../Assets/ecommerce.jpg";
 import Emojipedia from "../Assets/Emojipedia.png";
-import ExpenseTracker from "../Assets/ExpenseTracker.png";
+import ExpenseTracker from "../Assets/expensetracker.jpg";
 import observeIntersection from "../utils/intersectionObserver";
 
 const Project = () => {
@@ -30,7 +31,7 @@ const Project = () => {
     },
     {
       id: 6,
-      src: weatherApp,
+      src: Ecommerce,
     },
   ];
   const projectRef = useRef(null);
@@ -60,7 +61,7 @@ const Project = () => {
           {list.map(({ id, src }) => (
             <div key={id} className="shadow-md shadow-gray-600 rounded-lg">
               <img
-                className="mx-auto w-[200px] h-[200px] 
+                className="mx-auto w-[180px] h-[180px] 
             rounded-lg duration-300 hover:scale-105"
                 src={src}
                 alt=""

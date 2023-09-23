@@ -24,7 +24,7 @@ const About = () => {
           </p>
         </div>
         <div>
-          <div className="flex flex-col justify-center">
+          <div className="flex flex-col justify-center py-10">
             <p className="text-xl">
               As a skilled front-end developer with expertise in AWS, React.js,
               HTML, CSS, and JavaScript, I bring a strong foundation in web
